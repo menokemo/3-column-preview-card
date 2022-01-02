@@ -1,0 +1,201 @@
+/* Start variable's */
+
+ :root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+
+/* End variable's */
+
+
+/* Start Global roles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive, 'Lexend Deca', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* End Global roles */
+
+
+/*------ start components ------*/
+
+
+/*------ End components ------*/
+
+
+/* -------Start Media Queries------- */
+
+
+/* -----Small----- */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* Large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* -------End Media Queries------- */
+
+section {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width:761px) {
+    section {}
+}
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media (max-width:761px) {
+    section .container {
+        flex-direction: column;
+    }
+}
+
+section .container .box {
+    display: inherit;
+    width: 280px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 30px;
+    color: var(--Transparent-white-paragraphs);
+}
+
+@media (max-width:761px) {
+    section .container .box {
+        width: 90%;
+    }
+}
+
+section .container .box img {
+    max-width: 100%;
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+section .container .box h3 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+section .container .box p {
+    color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 0 60px;
+    line-height: 1.5;
+}
+
+section .container .box button {
+    width: fit-content;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border: 3px solid var(--Very-light-gray-background-headings-buttons);
+}
+
+section .container .box button:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: inherit;
+}
+
+section .container .sedans {
+    background-color: var(--Bright-orange);
+}
+
+section .container .sedans button {
+    color: var(--Bright-orange);
+}
+
+section .container .suvas {
+    background-color: var(--Dark-cyan);
+}
+
+section .container .suvas button {
+    color: var(--Dark-cyan);
+}
+
+section .container .luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+section .container .luxury button {
+    color: var(--Very-dark-cyan);
+}
+
+
+/* frontend mentor */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
